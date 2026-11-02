@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة عمرو موسى الثانوية بنين | مصنع الرجال</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,400&family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0284c7',
+                            darkblue: '#0369a1',
+                            navy: '#0f172a',
+                            red: '#dc2626',
+                            darkred: '#b91c1c',
+                            light: '#f8fafc',
+                            card: '#ffffff'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        amiri: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            background-image: radial-gradient(rgba(2, 132, 199, 0.08) 1px, transparent 0);
+            background-size: 28px 28px;
+        }
+        .blue-gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #1e3a8a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glow {
+            box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.1);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .card-glow:hover {
+            box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.2);
+            border-color: rgba(2, 132, 199, 0.4);
+        }
+        .modal-active { display: flex !important; }
+        .floating-btn-glow { box-shadow: 0 0 20px rgba(220, 38, 38, 0.4); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-blue selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-brand-blue/30">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div><i class="fa-solid fa-location-dot text-brand-blue ml-1"></i> جمهورية مصر العربية - محافظة القليوبية</div>
+            <div class="text-brand-blue font-bold"><i class="fa-solid fa-code text-brand-red ml-1"></i> تطوير: <span class="text-white">محمد أحمد شوقي</span></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <div class="w-14 h-14 rounded-xl border-2 border-brand-blue/40 p-0.5 shadow-md bg-white overflow-hidden flex items-center justify-center">
+                    <img src="https://raw.githubusercontent.com/mohmedahmedrandix-create/Diud/7028119258fde7eaacfaf7fe6962c64817bd70dd/1000001499.jpg.png" alt="شعار المدرسة" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-extrabold text-brand-navy">مدرسة عمرو موسى الثانوية بنين</h1>
+                    <p class="text-xs font-bold font-amiri text-brand-red">« مصنع الرجال »</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-7 space-x-reverse text-sm font-bold text-slate-700">
+                <a href="#hero" class="text-brand-blue">الرئيسية</a>
+                <a href="#principal">إدارة المدرسة</a>
+                <a href="#media">المركز الإعلامي</a>
+                <a href="#news">الأخبار والفيديوهات</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-20 text-center bg-gradient-to-b from-sky-50 via-white to-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-black text-brand-navy mb-4">مدرسة <span class="blue-gradient-text">عمرو موسى</span> الثانوية بنين</h1>
+            <p class="text-3xl md:text-5xl font-amiri font-extrabold text-brand-red mb-8">« مصنع الرجال »</p>
+        </div>
+    </section>
+
+    <!-- Principal Section -->
+    <section id="principal" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <div class="w-36 h-36 rounded-3xl border-4 border-brand-blue/30 shadow-xl overflow-hidden shrink-0">
+                <img src="https://raw.githubusercontent.com/mohmedahmedrandix-create/Diud/ed29e7d9e11dc73831d6fd097af0f34215d0ea8f/1000001501.jpg.png" alt="المدير" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold text-brand-navy mb-2">الأستاذ / أحمد إبراهيم (مدير المدرسة)</h3>
+                <p class="text-slate-600 text-sm font-semibold">« رسالتنا بناء أجيال من الرجال والابطال القادرين على قيادة المستقبل بعلم وانضباط. »</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="w-36 h-36 rounded-3xl border-4 border-brand-red/30 shadow-xl overflow-hidden shrink-0">
+                <img src="https://raw.githubusercontent.com/mohmedahmedrandix-create/Diud/refs/heads/main/1000001504.jpg.png" alt="الإعلامي" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold text-brand-navy mb-2">الإعلامي / محمد عبدالله اللاوندي</h3>
+                <p class="text-slate-600 text-sm font-semibold">مسؤول التغطية الإعلامية والتوثيق الرسمي لأنشطة المدرسة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Videos Section -->
+    <section id="news" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-brand-navy mb-8 text-center">أحدث الأخبار <span class="blue-gradient-text">والفيديوهات المباشرة</span></h2>
+            <div id="newsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- الأنشطة والفيديوهات المرفوعة سحابياً تظهر هنا تلقائياً -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-slate-300 py-8 text-xs text-center border-t border-slate-800">
+        <p>جميع الحقوق محفوظة © 2026 - مدرسة عمرو موسى الثانوية بنين</p>
+        <p class="text-brand-blue font-bold mt-2">المطور: محمد أحمد شوقي</p>
+    </footer>
+
+    <!-- Floating Upload Button -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <button onclick="openUploadModal()" class="bg-brand-red hover:bg-brand-darkred text-white p-4 rounded-full shadow-2xl floating-btn-glow flex items-center gap-2 font-extrabold">
+            <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+            <span class="text-xs">رفع فيديو / صورة</span>
+        </button>
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white max-w-lg w-full rounded-3xl p-6 relative shadow-2xl">
+            <button onclick="closeUploadModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-700"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h3 class="text-lg font-extrabold text-brand-navy mb-4">رفع مباشر من التليفون</h3>
+            <form onsubmit="uploadToCloudinary(event)" class="space-y-4 text-xs font-semibold">
+                <input type="text" id="mediaTitle" required placeholder="عنوان الفيديو أو الخبر..." class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3">
+                <input type="file" id="mediaFile" required accept="video/*,image/*" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2">
+                <button type="submit" id="uploadBtn" class="w-full bg-brand-red text-white font-extrabold py-3 rounded-xl">نشر فوري للجميع</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ربط ملف الجافاسكربت الخارجي للتحكم بالأخبار والفيديوهات -->
+    <script src="news.js"></script>
+</body>
+</html>
